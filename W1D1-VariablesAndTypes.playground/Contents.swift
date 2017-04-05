@@ -15,7 +15,7 @@ var greeting = "Hello, world!"
 //: and 3) the data stored inside the variable
 //: In the example above, the name of the variable is `greeting` and the value is a string "Hello, world!"
 
-var count = 0
+var count:Int = 0
 
 //: *Note:* In this case, the name of this variable is `count`, and the value is the number `0`
 
@@ -34,8 +34,6 @@ count = 10
 //: Now it's your turn. Change `greeting` to be a different string by using the assignment operator.
 greeting = "challange #1"
 
-
-//: *Note:* unlike math, where `x = 10` and `10 = x` are interchangeable, in programming the variable goes on the left of the `=` symbol, and the new value goes on the right.
 
 
 //: ### Challenge 2
@@ -69,11 +67,11 @@ count
 //: What type are the variables `tipAmount`, and `isOpen`?
 
 var tipAmount = 6.01
-// tipAmount's type is:
+// tipAmount's type is: Int
 
 
 var isOpen = true
-// isOpen's type is:
+// isOpen's type is: Bool
 
 
 //: ## Type Inference
@@ -83,26 +81,22 @@ var isOpen = true
 //:
 //: To create a Double, all we need to do is specify the type when we create the variable.
 
-var height: Double = 10
+var height: Double = 10.11
+
 
 //: Since all our variables have types, even if we haven't specifically set them, we can't store any value in them... only values of the right type.
 //: Test this out. Try setting the value of `count` to be `height`:
 
 
+count = 11
+
 
 //: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert the `Double` 10 into the `Int` 10, but we won't go into that just now.
 
 
-//: ## Bonus Challenge
-//:
-//: It may not be obvious, but the types we are using, `String`, `Int`, and `Double` all have methods, or bits of code, you can ask them to run. `Float` and `Int` have a pretty minimal set of things they can do, but `String` has a lot!
-//:
-//: Write out the name of a variable, e.g. `greeting`, and then a period. This will show the autocomplete menu. From this list you can pick `uppercased` and `lowercased` to change the case of the characters in our greeting.
-//:
-//: Print out the uppercase and lowercase versions of the string below:
-
+greeting.uppercased()
+print(greeting)
 var schoolName = "Lightouse Labs"
-
 
 
 //: THE END
